@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student details Object</title>
+</head>
+<body>
+    <!-- JS -->
+    <script>
+        function CreateObject(name,roll_no,s_class,section,Scince,So,Maths,English,Hindi){
+                this.name=name;
+                this.s_class=s_class;
+                this.roll_no=roll_no;
+                this.section=section;
+                this.Scince=Scince;
+                this.So=So;
+                this.Maths=Maths;
+                this.English=English;
+                this.Hindi=Hindi;
+
+                
+        }
+        let report=new CreateObject("Md Najamuddin",49,"10th","A",70,40,99,77,95);
+        let avreage=(report.Scince+report.So+report.Maths+report.English+report.Hindi)/5;
+        
+        console.log("+--------------------+");
+        console.log("|     REPORT CARD    |");
+        console.log("+--------------------+");
+        console.log(`|  Name - ${report.name} |`);
+        console.log(`|  Roll No - ${report.roll_no} |`);
+        console.log(`|  Class - ${report.s_class} |`);
+        console.log(`|  Section - ${report.section} |`);
+        console.log(`|  Scince - ${report.Scince} |`);
+        console.log(`|  S.sc - ${report.So} |`);
+        console.log(`|  English - ${report.English} |`);
+        console.log(`|  Maths - ${report.Maths} |`);
+        console.log(`|  Hindi - ${report.Hindi} |`);
+        console.log(`|  Prectage - ${avreage} %|`);
+        console.log("+--------------------+");
+        
+    </script>
+    
+</body>
+</html>
